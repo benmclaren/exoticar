@@ -1,0 +1,10 @@
+<%= @car.make %>
+<%= @car.model %>
+
+
+<p>Book this <%= @car.make %> now</p>
+<%= render 'bookings/form' %>
+
+<%= link_to "Cars Index", cars_path  %>
+
+   <%= link_to "Delete this car", car_path(@car) , :method => :delete, data: {:confirm => "Are you sure you want to remove this booking?"} %>

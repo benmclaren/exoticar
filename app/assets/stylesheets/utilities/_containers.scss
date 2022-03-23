@@ -1,0 +1,29 @@
+.page-container {
+  margin: 64px 96px;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-img {
+    max-height: 1300px;
+  }
+
+  .home-card-container {
+    display :grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+}
+
+
+

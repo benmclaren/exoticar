@@ -1,0 +1,11 @@
+<% @bookings.each do |booking| %>
+  <%#= link_to car_path(booking.car_id) do %>
+  <div>
+    <%= booking.car.make %>
+    <%= booking.car.model %>
+     <%= link_to "Delete this booking", booking_path(booking) , :method => :delete, data: {:confirm => "Are you sure you want to remove this booking?"} %>
+  </div>  
+  <%# end %>
+<% end %>
+  
+

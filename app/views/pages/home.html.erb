@@ -1,2 +1,63 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section class="hero-container">
+  <div class="color-body">
+    <h1 class="page-title h1 font-weight-bold">
+      Premium Car Rental in <span class="underline">London</span>
+    </h1>
+    <p class="font-weight-light page-extract mt-64">
+      Don’t deny yourself the pleasure of driving the most exotic cars from around the world.
+    </p>
+  </div>
+  <%= image_tag "porsche1.png", class: 'hero-img' %>
+</section>
+
+<section class="hero-search mt-128 w-100">
+  <div class="home-search">
+    <%= form_tag cars_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Pick-up date"
+      %>
+        <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Return date"
+      %>
+      <%= submit_tag "Search", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</section>
+
+<section class="container-right">
+  <div class="color-body">
+    <h2 class="page-title h1 font-weight-bold">
+      Key Features
+    </h2>
+    <p class="font-weight-light page-extract mt-16">
+      We are all about cars, thats why we provide a first class service
+    </p>
+  </div>
+</section>
+
+<section class="home-feature-section">
+  <div class="home-card-container mt-64">
+    <div class="home-card">
+    </div>
+    <div class="home-card">
+    </div>
+    <div class="home-card">
+    </div>
+    <div class="home-card">
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+<%= link_to "All Cars", cars_path, class: "btn btn-primary" %>
+
+

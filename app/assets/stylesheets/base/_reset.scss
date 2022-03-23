@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    #BASE: RESET
+\*------------------------------------*/
+
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+
+ html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+* {
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+
+
+a {
+text-decoration: inherit;
+color: inherit;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+margin: 0;
+}
+
+/* Remove default padding and list style */
+ul[class],
+ol[class] {
+padding: 0;
+list-style: none;
+}
+
+// Responsive images
+img {
+display: inline-block;
+border: 0;
+max-width: 100%;
+height: auto;
+vertical-align: middle;
+}
+
+figure {
+margin: 0;
+}
+
+[hidden] {
+display: none!important;
+}
